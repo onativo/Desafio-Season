@@ -61,7 +61,7 @@ a{
   flex-direction: row;
 }
 .img-small{
-  max-width: fit-content;
+  max-width: 225px;
 }
 .card-prod{
   display: flex;
@@ -140,4 +140,7 @@ a{
 }
 .text-right{
   text-align: right;
+}
+.product-name{
+  font-size: 15px;
 }

@@ -14,7 +14,7 @@ export default function Basket(props) {
         <div key={item.id} className="row">
           <div className="col-2 product-name">
             {item.name}
-            <hr/>
+          <hr/>
           </div>
           <div className="col-2 buttons">
             <div>
