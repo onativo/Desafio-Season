@@ -3,7 +3,7 @@ import empty from '../img/empty.png'
 
 export default function Basket(props) {
 
-  const {cartItems, onAdd, onRemove} = props;
+  const {cartItems, onAdd, onRemove, clearCart} = props;
 
   const totalPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
   //calcula o custo total dos produtos de acordo com a quantidade deles no carrinho
@@ -47,6 +47,9 @@ export default function Basket(props) {
           </div>
         </>
       )}
+      <div className='clear-bnt'>
+        {cartItems.length >= 1 &&<button onClick={clearCart}>Limpar carrinho</button>}
+      </div>
     </section>
   )
 }

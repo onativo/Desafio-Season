@@ -20,12 +20,17 @@ function App(){
 
   //remove algum item do carrinho
   const onRemove = (product) =>{
-    const exist = cartItems.find((x) => x.id === product.id); //se o item com o id correspondente existe no carrinho
+    const exist = cartItems.find((x) => x.id === product.id); //se o item x com o id correspondente ao produto existe no carrinho
     if(exist.qty === 1){
       setCartItems(cartItems.filter((x) => x.id !== product.id))
     }else{
       setCartItems(cartItems.map(x => x.id === product.id ? {...exist, qty: exist.qty - 1} : x))//se existe mais de 1 então remove -1
     }
+  }
+
+  //limpa o carrinho por completo
+  const clearCart = () => {
+    setCartItems([]);
   }
 
   const [products, setProducts] = useState([]);
@@ -64,6 +69,7 @@ function App(){
                 onRemove={onRemove}
                 onAdd={onAdd}
                 cartItems={cartItems}
+                clearCart={clearCart}
               />
             </div>}
           />
