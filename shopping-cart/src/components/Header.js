@@ -7,15 +7,17 @@ export default function Header(props){
   const {countCartItems} = props;
 
   return(
-    <header className='row block center'>
+    <header className='row block center header'>
       <div>
         <Link to='/'>
           <img src={logo} alt='logo'></img>
         </Link>
       </div>
-      <div className='titulo-site'>
-        <h1>Lojinha da Season</h1>
-      </div>
+      <Link to='/'>
+        <div className='titulo-site'>
+          <h1>Lojinha da Season</h1>
+        </div>
+      </Link>
       <Link to='/basket'>
         <div className='cart-logo-bg'>
           <span className='cart-logo'>

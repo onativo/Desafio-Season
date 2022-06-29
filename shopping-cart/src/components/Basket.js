@@ -1,4 +1,5 @@
 import React from 'react'
+import empty from '../img/empty.png'
 
 export default function Basket(props) {
 
@@ -9,11 +10,11 @@ export default function Basket(props) {
   //a: acumulador(soma de quantos itens há no carrinho) default=0 || c: current item:price * current item:quantity
 
   return (
-    <aside className="block col-1">
+    <section className="block section-cart">
       <div>
         <h2 className="titulo-cart">Meu Carrinho</h2>
       </div>
-      <div>{cartItems.length === 0 && <div className="cart-subtitle">O carrinho está vazio</div>}</div>
+      <div>{cartItems.length === 0 && <img src={empty} className='cart-img' alt='empty-cart'></img>}</div>
       {cartItems.map((item) => (
         <div key={item.id} className="row">
           <div className="col-2 product-name">
@@ -46,6 +47,6 @@ export default function Basket(props) {
           </div>
         </>
       )}
-    </aside>
+    </section>
   )
 }

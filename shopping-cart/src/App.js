@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Basket from './components/Basket';
 import { useEffect, useState } from 'react';
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App(){
 
