@@ -30,7 +30,7 @@ a{
   font-weight: 700;
   color: #3c5159;
 }
-.cart-subtitle p{
+.cart-subtitle{
   justify-content: center;
   display: flex;
   margin: auto;
@@ -50,7 +50,6 @@ a{
   background-color: #edf1f3;
   padding: 1rem;
   margin: 0.5rem;
-  border-radius: 0.5rem;
 }
 .row.center{
   align-items: center;
@@ -143,4 +142,27 @@ a{
 }
 .product-name{
   font-size: 15px;
+}
+.cart-logo-bg{
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 1rem;
+}
+.cart-logo{
+  font-size: 20px;
+  color: #fff;
+  padding: 4.5px;
+}
+.cart-iten-count{
+  top: -15px;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  background-color: #ff0000;
+  font-weight: 600;
+  border-radius: 1rem;
+  max-width: 15px;
+  justify-content: center;
 }

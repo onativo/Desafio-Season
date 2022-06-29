@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Basket from './components/Basket';
 import { useEffect, useState } from 'react';
+import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
 function App(){
 
@@ -46,19 +47,28 @@ function App(){
 
   return(
     <div className='App'>
-      <Header></Header>
-      <div className='row'>
-        <Main 
-          onAdd={onAdd}
-          products={products}>
-        </Main>
-        <Basket 
-          onRemove={onRemove}
-          onAdd={onAdd}
-          cartItems={cartItems}>
-
-        </Basket>
-      </div>
+      <Router>
+      <Header countCartItems={cartItems.length}/>
+        <Routes>
+          <Route path='/' element={
+            <div className='row'>
+              <Main
+                onAdd={onAdd}
+                products={products}
+              />
+            </div>}
+          />
+          <Route path='/basket' element={
+            <div className='row'>
+              <Basket
+                onRemove={onRemove}
+                onAdd={onAdd}
+                cartItems={cartItems}
+              />
+            </div>}
+          />
+        </Routes>
+      </Router>
     </div>
   )
 }
