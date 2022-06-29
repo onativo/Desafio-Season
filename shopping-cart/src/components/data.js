@@ -1,4 +1,12 @@
-const data = {
+/*
+..--.._..--.._..--.._..--.._
+OBS: Eu não estava conseguindo fazer a busca da api com o fetch então fiz dessa forma,
+com os dados da api salvos nesse arquivo data.js
+Porém consegui fazer com o fetch então esse código ficou comentado.
+--.._..--.._..--.._..--_..--
+
+
+  const data = {
   products:
     [
       {
@@ -505,3 +513,7 @@ const data = {
 };
 
 export default data
+
+
+
+*/
