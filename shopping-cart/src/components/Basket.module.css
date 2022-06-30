@@ -1,0 +1,77 @@
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col_1{
+  flex: 1;
+}
+.col_2{
+  flex: 2;
+}
+.titulo_cart{
+  justify-content: center;
+  display: flex;
+  font-weight: 700;
+  color: #3c5159;
+}
+.block{
+  background-color: #edf1f3;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.section_cart{
+  min-width: 50%;
+}
+.titulo_cart{
+  justify-content: center;
+  display: flex;
+  font-weight: 700;
+  color: #3c5159;
+}
+.text_right{
+  text-align: right;
+}
+.cart_img{
+  display: flex;
+  margin: auto;
+  max-width: 450px;
+}
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+.btn_add{
+  width: 1.5rem;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  margin:  0.1rem;
+  border: none;
+  margin-right: 5px;
+}
+.btn_remove{
+  width: 1.5rem;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  margin:  0.1rem;
+  border: none;
+  margin-left: 5px;
+}
+.clear_bnt{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.clear_bnt button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 23%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}

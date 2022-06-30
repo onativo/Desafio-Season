@@ -20,6 +20,11 @@ h3{
 a{
   text-decoration: none;
 }
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}/*
 .titulo-site{
   margin: auto;
   color: #3c5159;
@@ -35,11 +40,7 @@ a{
   display: flex;
   margin: auto;
 }
-.row{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+
 .col-1{
   flex: 1;
 }
@@ -195,4 +196,4 @@ a{
   font-size: 18px;
   display: flex;
   justify-content: center;
-}
+}*/

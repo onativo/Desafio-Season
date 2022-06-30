@@ -1,0 +1,44 @@
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.row.center{
+  align-items: center;
+}
+.block{
+  background-color: #edf1f3;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.header{
+  position: sticky;
+  top: 0;
+}
+.titulo_site{
+  margin: auto;
+  color: #3c5159;
+}
+.cart_logo_bg{
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 1rem;
+}
+.cart_logo{
+  font-size: 20px;
+  color: #fff;
+  padding: 4.5px;
+}
+.cart_iten_count{
+  top: -15px;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  background-color: #ff0000;
+  font-weight: 600;
+  border-radius: 1rem;
+  max-width: 15px;
+  justify-content: center;
+}
